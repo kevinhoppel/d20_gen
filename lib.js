@@ -44,7 +44,7 @@ const getWordHash = (word) => {
  * 
  * @param {string} inputString - the string from which the passphrase is derived
  */
-module.exports.getPassphraseFromCodewords = (inputString) => {
+module.exports.getCodedPassphrase = (inputString) => {
   const codeStrings = [];
 
   for(let i = 0; i < inputString.length; i += HASHWORD_LEN) {
